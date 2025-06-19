@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyajyot Singh | Digital Organiser Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #EDF2F4;
+            color: #2B2D42;
+        }
+        .text-labour-red { color: #D90429; }
+        .bg-labour-red { background-color: #D90429; }
+        .border-labour-red { border-color: #D90429; }
+        .bg-labour-accent { background-color: #EF233C; }
+        .text-labour-light { color: #8D99AE; }
+        .bg-labour-dark { background-color: #2B2D42; }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            padding: 2rem; /* Increased padding for more whitespace */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Subtler shadow */
+            transition: none; /* Removed hover transition for minimalistic feel */
+        }
+        .kpi-number {
+            font-weight: 900;
+            font-size: 4.5rem;
+            line-height: 1;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 0.25rem;
+            left: -0.625rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 9999px;
+            background-color: #D90429;
+            border: 3px solid #EDF2F4;
+            z-index: 10;
+        }
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl">
+
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-6xl font-black text-labour-red mb-2">Divyajyot Singh</h1>
+            <p class="text-xl md:text-2xl font-semibold text-labour-dark">Applying for Local Digital Organiser</p>
+            <p class="text-md text-labour-light mt-2 max-w-3xl mx-auto font-light">A visual summary of my qualifications, demonstrating a commitment to driving impactful digital campaigns for the Labour Party in the North West.</p>
+        </header>
+
+        <main>
+            <section id="core-competencies" class="mb-16">
+                <h2 class="text-3xl font-bold text-center mb-10">Core Competencies</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="card text-center">
+                        <div class="text-6xl mb-4">🎬</div>
+                        <h3 class="text-xl font-semibold mb-2">Digital Content Creation</h3>
+                        <p class="text-labour-light font-light">Expert in creating compelling graphics, videos, and copy tailored for social media and web platforms to engage and mobilise audiences.</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="text-6xl mb-4">📢</div>
+                        <h3 class="text-xl font-semibold mb-2">Strategic Campaigning</h3>
+                        <p class="text-labour-light font-light">Experienced in developing and executing end-to-end digital strategies that increase reach, drive engagement, and achieve campaign objectives.</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="text-6xl mb-4">👥</div>
+                        <h3 class="text-xl font-semibold mb-2">Stakeholder Engagement</h3>
+                        <p class="text-labour-light font-light">Adept at collaborating with diverse groups, training volunteers, and integrating team efforts to ensure seamless campaign operations.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="kpis" class="mb-16">
+                <h2 class="text-3xl font-bold text-center mb-10">Key Achievements & Impact</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="card text-center">
+                        <p class="kpi-number text-labour-red">40%+</p>
+                        <p class="text-lg font-semibold">Increase in YouTube Reach</p>
+                        <p class="text-sm text-labour-light font-light">at Philips Domestic India by optimising content and SEO strategy.</p>
+                    </div>
+                    <div class="card text-center">
+                        <p class="kpi-number text-labour-red">30%</p>
+                        <p class="text-lg font-semibold">Increase in Website Traffic</p>
+                        <p class="text-sm text-labour-light font-light">in just one month from a successfully launched digital campaign.</p>
+                    </div>
+                    <div class="card text-center">
+                        <p class="kpi-number text-labour-red">5</p>
+                        <p class="text-lg font-semibold">Team Members Led</p>
+                        <p class="text-sm text-labour-light font-light">at Sachkhand Foundation, successfully delivering a major community project.</p>
+                    </div>
+                     <div class="card text-center">
+                        <p class="kpi-number text-labour-red">5+</p>
+                        <p class="text-lg font-semibold">Months Campaign Support</p>
+                        <p class="text-sm text-labour-light font-light">providing dedicated content creation for a women's biking event.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="highlighted-contributions" class="mb-16">
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-center mb-10">Highlighted Contributions from Past Roles</h2>
+                    <p class="text-center text-labour-light mb-10 max-w-2xl mx-auto font-light">My professional journey has been marked by tangible results and impactful projects, showcasing my ability to deliver across various digital and organizational domains.</p>
+                    <ul class="space-y-8">
+                        <li class="flex items-start">
+                            <span class="text-3xl text-labour-red mr-4">▪︎</span>
+                            <div>
+                                <h3 class="text-xl font-semibold text-labour-dark">Strategic Digital Campaign Launch</h3>
+                                <p class="text-labour-light font-light">Designed and launched a successful website campaign that notably increased website traffic by <strong class="text-labour-dark">30% in just one month</strong> at Philips Domestic India, demonstrating rapid impact and strategic digital execution.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-3xl text-labour-red mr-4">▪︎</span>
+                            <div>
+                                <h3 class="text-xl font-semibold text-labour-dark">YouTube Channel Optimization</h3>
+                                <p class="text-labour-light font-light">Optimized the Philips India YouTube channel, integrating SEO and content strategy to achieve over <strong class="text-labour-dark">40% increase in digital reach</strong>, proving effectiveness in audience growth and platform management.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-3xl text-labour-red mr-4">▪︎</span>
+                            <div>
+                                <h3 class="text-xl font-semibold text-labour-dark">Team Leadership & Campaign Coordination</h3>
+                                <p class="text-labour-light font-light">Led a team of <strong class="text-labour-dark">five members</strong> to successfully complete a major project at Sachkhand Foundation, coordinating operations and engaging diverse target groups in community campaigns.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-3xl text-labour-red mr-4">▪︎</span>
+                            <div>
+                                <h3 class="text-xl font-semibold text-labour-dark">Compelling Content Development</h3>
+                                <p class="text-labour-light font-light">Executed digital content creation, including designing graphics and editing videos for social media, and acted as a key member of the content creation team for a <strong class="text-labour-dark">5+ month women's biking event</strong>.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="skills" class="mb-16">
+                 <div class="card">
+                    <h2 class="text-3xl font-bold text-center mb-10">Technical Proficiency</h2>
+                    <p class="text-center text-labour-light mb-10 max-w-2xl mx-auto font-light">My technical skills are centered around the Adobe Creative Suite, enabling me to produce a wide range of high-quality digital assets efficiently. This proficiency is key to delivering on the creative demands of a fast-paced political campaign.</p>
+                    <div class="chart-container relative h-80 md:h-96 w-full max-w-4xl mx-auto">
+                        <canvas id="skillsChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <section id="journey" class="mb-16">
+                <h2 class="text-3xl font-bold text-center mb-12">Career Journey: A Path to Digital Organising</h2>
+                <div class="relative pl-8 border-l-4 border-labour-dark">
+                    
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-labour-red">Graphic Designer / Video Editor</h3>
+                        <p class="font-medium text-labour-dark">The Unveiled Sagas (July '23 - Present)</p>
+                        <p class="mt-2 text-labour-light font-light">Executed digital content strategy and managed campaign operations for a 5+ month event, utilising Adobe Creative Suite to engage specific community groups.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-labour-red">Digital Marketing / Graphic Designer</h3>
+                        <p class="font-medium text-labour-dark">Philips Domestic India (July - Aug '23)</p>
+                        <p class="mt-2 text-labour-light font-light">Developed digital strategy that drove a 30% traffic increase and engaged internal stakeholders to implement impactful marketing campaigns.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-labour-red">Public Relations Intern</h3>
+                        <p class="font-medium text-labour-dark">Sachkhand Foundation (Oct - Dec '22)</p>
+                        <p class="mt-2 text-labour-light font-light">Organised community campaigns and led a team of 5, coordinating operations and engaging diverse stakeholders to achieve project goals.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-labour-red">Graphic Designer / Business Analyst</h3>
+                        <p class="font-medium text-labour-dark">Edutellect Enterprises (Jan - Jun '21)</p>
+                        <p class="mt-2 text-labour-light font-light">Contributed to content strategy by designing materials and collaborating with cross-functional groups to implement integrated project operations.</p>
+                    </div>
+                    
+                </div>
+            </section>
+            
+            <section id="integration" class="mb-16">
+                 <div class="card">
+                    <h2 class="text-3xl font-bold text-center mb-10">Integrating Field & Digital Operations</h2>
+                    <p class="text-center text-labour-light mb-10 max-w-3xl mx-auto font-light">A successful campaign requires seamless integration between on-the-ground organising and online mobilisation. My approach ensures that digital efforts amplify fieldwork and that insights from the field inform our digital strategy, creating a powerful feedback loop for success.</p>
+                    <div class="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-12">
+                        <div class="text-center p-6 border-2 border-dashed border-labour-red rounded-lg w-full md:w-1/3">
+                            <h4 class="font-bold text-lg">📢 Field Operations</h4>
+                            <p class="text-sm text-labour-light font-light">Door knocking, community events, local organisers, volunteer mobilisation.</p>
+                        </div>
+                        <div class="text-5xl font-black text-labour-red transform md:-rotate-90">⬍</div>
+                        <div class="text-center p-6 border-2 border-dashed border-labour-red rounded-lg w-full md:w-1/3">
+                            <h4 class="font-bold text-lg">💻 Digital Operations</h4>
+                            <p class="text-sm text-labour-light font-light">Social media, paid ads, email campaigns, content creation.</p>
+                        </div>
+                    </div>
+                 </div>
+            </section>
+
+             <section id="values">
+                <h2 class="text-3xl font-bold text-center mb-10">Commitment to Labour Values</h2>
+                <div class="bg-labour-dark rounded-lg p-8 text-white text-center max-w-4xl mx-auto">
+                    <p class="text-lg italic font-light">"I am deeply committed to the Labour Party's values and its dedication to equality, diversity, and inclusion. I believe in a collaborative culture of continuous improvement and am eager to apply my creative and strategic skills to empower Labour Groups in the North West."</p>
+                    <p class="font-semibold mt-4">- Divyajyot Singh</p>
+                </div>
+             </section>
+
+        </main>
+
+        <footer class="text-center mt-20 pt-8 border-t border-labour-light">
+            <p class="font-semibold">Divyajyot Singh</p>
+            <p class="text-sm text-labour-light font-light">contact.divyajyot02@gmail.com | +44 7407795932</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const ctx = document.getElementById('skillsChart');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Adobe Premiere Pro', 'Adobe Photoshop', ['Adobe After', 'Effects'], 'Adobe InDesign', 'Figma / Adobe XD'],
+                datasets: [{
+                    label: 'Years of Experience / Proficiency Level',
+                    data: [4, 4.5, 2.5, 3.5, 3],
+                    backgroundColor: [
+                        '#D90429', /* Labour Red */
+                        '#2B2D42', /* Labour Dark */
+                        '#D90429',
+                        '#2B2D42',
+                        '#D90429'
+                    ],
+                    borderColor: 'transparent', /* Removed border for minimalistic look */
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(141, 153, 174, 0.1)', /* Lighter grid lines */
+                            drawBorder: false /* Removed border */
+                        },
+                        ticks: {
+                            color: '#2B2D42',
+                            font: {
+                                weight: 'light'
+                            }
+                        }
+                    },
+                    y: {
+                         grid: {
+                            display: false
+                        },
+                        ticks: {
+                           color: '#2B2D42',
+                           font: {
+                               weight: 'light'
+                           }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        backgroundColor: '#2B2D42',
+                        titleFont: {
+                            size: 16,
+                            weight: 'bold'
+                        },
+                        bodyFont: {
+                            size: 14
+                        },
+                        callbacks: {
+                           title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                  return label.join(' ');
+                                } else {
+                                  return label;
+                                }
+                           }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
